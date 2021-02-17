@@ -96,29 +96,7 @@
          return true;
          }
       </script>
-<style>
-body {background-color: white;}
-details {
-  user-select: none;
-}
-details[open] {
-  & summary svg {
-    transform: rotate(-90deg);
-  }
-}
-summary {
-  cursor: pointer;
-}
-svg {
-  transition: all 0.3s;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-:focus {
-  outline: none;
-}
-</style>
+<link rel="stylesheet" href="jsplease.css">
       <script src="security.js"></script>
    </head>
    <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
