@@ -1,19 +1,19 @@
 *
-details {
+.details {
   user-select: none;
 }
-details[open] {
+.details[open] {
   & summary svg {
     transform: rotate(-90deg);
   }
 }
-summary {
+.summary {
   cursor: pointer;
 }
-svg {
+.svg {
   transition: all 0.3s;
 }
-summary::-webkit-details-marker {
+.summary::-webkit-details-marker {
   display: none;
 }
 :focus {
