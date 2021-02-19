@@ -25,7 +25,82 @@
       <meta property=og:description content="Official Website">
       <meta property=og:image content=https://i.ibb.co/hXKcGjy/aco-chip-set-logo-blue.png>
       <!--META META META META META META META EMBEDS META META META META META META META META META META META META META META-->
-      <noscript><meta http-equiv="refresh" content="0;url=https://ayaan-codes.github.io/web/doit/enablejs.html"></noscript>
+      <style>
+        html,
+.root {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+body {
+  font: menu;
+  font-size: 1rem;
+  line-height: 1.4;
+  padding: 0;
+  margin: 0;
+}
+section {
+  padding-top: 4rem;
+  width: 50%;
+  margin: auto;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+details[open] summary ~ * {
+  animation: open 0.3s ease-in-out;
+}
+
+@keyframes open {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  width: 100%;
+  padding: 0.5rem 0;
+  border-top: 1px solid black;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-weight: 300;
+  list-style: none;
+}
+
+details summary:after {
+  content: "+";
+  color: black;
+  position: absolute;
+  font-size: 1.75rem;
+  line-height: 0;
+  margin-top: 0.75rem;
+  right: 0;
+  font-weight: 200;
+  transform-origin: center;
+  transition: 200ms linear;
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+  font-size: 2rem;
+}
+details summary {
+  outline: 0;
+}
+details p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  padding-top: 1rem;
+}
+</style>
       <script language=JavaScript>
          //Disable right mouse click Script
          
@@ -96,78 +171,39 @@
          return true;
          }
       </script>
-<style>
-body {background-color: white;}
-details {
-  user-select: none;
-}
-details[open] {
-  & summary svg {
-    transform: rotate(-90deg);
-  }
-}
-summary {
-  cursor: pointer;
-}
-svg {
-  transition: all 0.3s;
-}
-summary::-webkit-details-marker {
-  display: none;
-}
-:focus {
-  outline: none;
-}
-</style>
-<link rel="stylesheet" href="jsplease.css">
-      <script src="security.js"></script>
-   </head>
-   <body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
-<div class="app min-h-screen bg-grey-light font-sans overflow-hidden">
-  <div class="h-32 flex items-center justify-center bg-red">
-    <h1 class="text-2xl text-teal-darkest -mt-8">Enable JavaScript</h1>
-    
-    
-  </div>
-  <div class="wrapper border-b-2 -mt-8 bg-white overflow-hidden mx-auto max-w-sm rounded shadow-lg">
-    <h3 class="bg-grey-lightest px-8 py-6 font-semibold">
-ACO Uses Java for security and extra functions. Enable it to use the site. <br><br>
-      📌How to Enable.....</h3>
-    <div class="question-wrap mx-8 mt-2">
-      <details class="question py-4 border-b border-grey-lighter">
-        <summary class="flex items-center">1. Click Refresh
-          <button class="ml-auto">
-          <svg class="fill-current opacity-75 w-4 h-4 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-        </button>
-        </summary>
-        <div class="mt-4 leading-normal text-sm ">This is done to stop the loop for refresh.</div>
-      </details>
-      <details class="question py-4 border-b border-grey-lighter">
-        <summary class="flex items-center">2. Click Lock Icon On Search Bar
-          <button class="ml-auto">
-          <svg class="fill-current opacity-75 w-4 h-4 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-        </button>
-        </summary>
-        <div class="mt-4 leading-normal text-sm">
-          <ul>
-            <li>Find where you see the links to websites.</li>
-            <li>Click on it and find where it says JavaScript.</li>
-            <li>Click the options and ALLOW.</li>
-          </ul>
-        </div>
-      </details>
-      <details class="question py-4 border-b border-grey-lighter">
-        <summary class="flex items-center">Refresh This Page
-          <button class="ml-auto">
-          <svg class="fill-current opacity-75 w-4 h-4 -mr-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
-        </button>
-        </summary>
-        <div class="mt-4 leading-normal text-sm ">Please refresh the page to save, then click the back arrow provided on your browser. ⬅ (near the top left of your screen)</div>
-      </details>
-    </div>
-    <a href="https://website.smb.company" class="text-right block py-6 px-8 no-underline text-grey-darker hover:underline hover:text-black text-sm">ACO Website</a>
-  </div>
-  <footer class="text-center py-8 text-grey-dark">
+<!----------------------------------------------------------->
+<section>
+  <h1>
+    Enable JavaScript
+  </h1>
+  <details>
+    <summary> 🔵 Details</summary>
+    <p>
+      ACO uses JS for extra security, functions, and to provide easy navigation of our websites and apps. We require that you enable JS to continue use of our product. Please follow the steps below by clicking the + icon on each catagory.
+    </p>
+  </details>
+  <details>
+    <summary>1. Starting JS</summary>
+    <p>
+      - Make sure that you have click refresh on this tab to stop the loop.<br>
+      - Then navigate to the lock icon on this site. This is located near the refresh icon. It looks like 🔒 but it may be grey. <br>
+      - Navigate to where is says JavaScript and open the drop down menu. <br>
+      - Click Allow to enable JavaScript.
+    </p>
+  </details>
+  <details>
+    <summary>2. Saving your choice.
+    </summary>
+    <p>You should now be prompted to refresh the page once more. Please do so to save your choice. </p>
+  </details>
+  <details>
+    <summary>3. Returning to what you were doing.
+    </summary>
+    <p>To return to what you were using before you got this message, please click the back arrow. "⬅" will take you back to the link you were at before this site. If you would like to go to the home page of ACO please enter https://website.smb.company in your web address bar. Make sure to keep JS on. </p>
+  </details>
+</section>
+<!----------------------------------------------------------->
+  <br><br><footer class="text-center py-8 text-grey-dark">
     ⭕ACO DoIt System
   </footer>
 </div>
